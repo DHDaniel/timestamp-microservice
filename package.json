@@ -4,7 +4,8 @@
   "description": "A timestamp microservice built in Node JS",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [
     "timestamp",
@@ -12,5 +13,17 @@
     "microservice"
   ],
   "author": "Daniel Hernandez",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DHDaniel/timestamp-microservice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DHDaniel/timestamp-microservice/issues"
+  },
+  "homepage": "https://github.com/DHDaniel/timestamp-microservice#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "moment": "^2.15.1"
+  }
 }

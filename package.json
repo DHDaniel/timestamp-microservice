@@ -1,0 +1,16 @@
+{
+  "name": "timestamp",
+  "version": "1.0.0",
+  "description": "A timestamp microservice built in Node JS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "timestamp",
+    "time",
+    "microservice"
+  ],
+  "author": "Daniel Hernandez",
+  "license": "MIT"
+}

@@ -4,6 +4,9 @@ const moment = require("moment");
 const express = require('express');
 var app = express();
 
+// This allows Heroku to set the port themselves.
+app.set('port', (process.env.PORT || 8080));
+
 // matches any url
 app.get("/:date", function (req, res) {
   // decides whether to parse date or not
@@ -22,4 +25,6 @@ app.get("/:date", function (req, res) {
 
     res.end(JSON.stringify(response_JSON));
 
-}).listen(8080);
+}).listen(app.get("port"), function () {
+  console.log("Time-pls running on port " + app.get("port"));
+});

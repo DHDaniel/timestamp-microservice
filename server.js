@@ -13,7 +13,7 @@ app.get("/:date", function (req, res) {
 
     var response_JSON = {
       "unix" : date.getTime(),
-      "natural" : natural
+      "natural" : (natural.indexOf("Invalid") > -1) ? null : natural
     }
 
     res.writeHeader(200, {
